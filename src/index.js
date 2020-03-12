@@ -1,17 +1,43 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Casa from './components/Casa';
+const root = document.getElementById('root');
+
+ReactDOM.render(<Casa />, root);
+
+/*import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from './components/Vingadores';
+const root = document.getElementById('root');
+
+ReactDOM.render(<div>
+  <Ca
+    nome='Tony Stark' />
+  <Vn
+    nome='Grandão' />
+</div>, root);
+*/
 //Usando props
+/*
 import OlaMundo from './components/OlaMundo';
+import Professor from './components/Professor';
+import Estudante from './components/Estudante';
 
 const root = document.getElementById('root');
-ReactDOM.render(<OlaMundo nome='Wellington'
-  idade='19'
-  curso='Sistemas de Informação'
-  cidade='Mombaça-CE'
-/>, root);
 
+ReactDOM.render(
+  <div>
+    <Professor
+      nome='Jefferson'
+      area='Engenharia de Software'
+      nivel='Doutorado'
+      curso='Sistemas de Informação' />
+    <Estudante
+      nome='Wellington'
+      idade={19}
+      curso='Sistemas de Informação'
+      cidade='Mombaça-CE' />
+  </div>, root);
+  */
 /*
 //Usando function
 const root = document.getElementById('root');

@@ -29,13 +29,3 @@ export default () =>
     <h1>{props.nome}</h1>
     <h1>{props.sobrenome}</h1>
   </div>*/
-
-export default (props) =>
-  <div>
-    <ul>
-      <li>Nome: {props.nome}</li>
-      <li>Idade: {props.idade}</li>
-      <li>Curso: {props.curso}</li>
-      <li>Cidade: {props.cidade} </li>
-    </ul>
-  </div>
