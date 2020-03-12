@@ -6,13 +6,16 @@ import CasaGenerico from './components/CasaGenerico';
 import Personagem from './components/Personagem'
 const root = document.getElementById('root');
 ReactDOM.render(
-  <CasaGenerico>
-    <Personagem nome='Arya' casa='Stark' />
-    <Personagem nome='Robert' casa='Baratheon' />
-    <Personagem nome='Jhon' casa='Targaryan' />
-    <Personagem nome='Sansa' casa='Stark' />
-    <Personagem nome='Drogo' casa='??' />
-  </CasaGenerico>, root)
+  <div>
+    <CasaGenerico casa='Stark' regiao='Norte'>
+      <Personagem nome='Arya' />
+      <Personagem nome='Sansa' />
+    </CasaGenerico>
+
+    <CasaGenerico casa='Targaryan' regiao='Oeste'>
+      <Personagem nome='Jhon' />
+    </CasaGenerico>
+  </div>, root)
 
 /*import Casa from './components/Casa';
 const root = document.getElementById('root');
