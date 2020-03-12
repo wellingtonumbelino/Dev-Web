@@ -1,6 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
+import IMCFuncao from './components/imc/IMCFuncao'
+const root = document.getElementById('root')
+ReactDOM.render(
+  <div>
+    <IMCFuncao peso={75} altura={1.75} />
+  </div>, root)
+
+/*
 //Usando props de forma genérica
 import CasaGenerico from './components/CasaGenerico';
 import Personagem from './components/Personagem'
@@ -16,7 +24,7 @@ ReactDOM.render(
       <Personagem nome='Jhon' />
     </CasaGenerico>
   </div>, root)
-
+*/
 /*import Casa from './components/Casa';
 const root = document.getElementById('root');
 
