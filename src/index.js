@@ -1,11 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Casa from './components/Casa';
+//Usando props de forma genérica
+import CasaGenerico from './components/CasaGenerico';
+import Personagem from './components/Personagem'
+const root = document.getElementById('root');
+ReactDOM.render(
+  <CasaGenerico>
+    <Personagem nome='Arya' casa='Stark' />
+    <Personagem nome='Robert' casa='Baratheon' />
+    <Personagem nome='Jhon' casa='Targaryan' />
+    <Personagem nome='Sansa' casa='Stark' />
+    <Personagem nome='Drogo' casa='??' />
+  </CasaGenerico>, root)
+
+/*import Casa from './components/Casa';
 const root = document.getElementById('root');
 
 ReactDOM.render(<Casa />, root);
-
+*/
 /*import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from './components/Vingadores';
 const root = document.getElementById('root');
 

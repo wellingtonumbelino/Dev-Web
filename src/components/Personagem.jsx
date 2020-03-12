@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-
-// import { Container } from './styles';
+import React from 'react';
 
 export default props =>
   <div>
