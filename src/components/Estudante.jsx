@@ -1,11 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-export default (props) =>
-  <div>
-    <ul>
-      <li>Nome: {props.nome}</li>
-      <li>Idade: {props.idade}</li>
-      <li>Curso: {props.curso}</li>
-      <li>Cidade: {props.cidade} </li>
-    </ul>
+export default props => {
+  return <div>
+    <h2>Estudante {props.nome} do Curso {props.curso}</h2>
   </div>
+}

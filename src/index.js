@@ -1,8 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import Pai from './components/filho_pai/Pai'
-import MinhaClasse from './components/classes/MinhaClasse'
+import Curso from './components/Curso'
+import Turma from './components/Turma'
+import Estudante from './components/Estudante'
 
 const root = document.getElementById('root')
-ReactDOM.render(<MinhaClasse nome='Goku' />, root)
+
+ReactDOM.render(
+  <div>
+    <Curso curso='Sistemas de Informação'>
+      <Turma turma='FUP'>
+        <Estudante nome='Wellington' />
+      </Turma>
+    </Curso>
+  </div>, root)
